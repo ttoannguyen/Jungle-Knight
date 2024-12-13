@@ -2,13 +2,18 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    [SerializeField] private float moveSpeed = 1.0f;
+    public bool FacingLeft { get { return facingLeft; } private set { facingLeft = value; } }
+    private bool facingLeft = false;
 
-    private PlayerControls playerControls;
-    private Vector2 movement;
+    [SerializeField] private float moveSpeed;
+
     private Rigidbody2D rb;
+    private Vector2 movement;
     private Animator myAnimator;
+    private PlayerControls playerControls;
     private SpriteRenderer mySpriteRenderer;
+
+
 
     private void Awake()
     {
@@ -54,10 +59,12 @@ public class PlayerController : MonoBehaviour
         if (mousePos.x < playerScreenPoint.x)
         {
             mySpriteRenderer.flipX = true;
+            FacingLeft = true;
         }
         else
         {
             mySpriteRenderer.flipX = false;
+            FacingLeft = false;
         }
     }
 }
