@@ -3,6 +3,9 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     public bool FacingLeft { get { return facingLeft; } private set { facingLeft = value; } }
+    public static PlayerController Instance;
+
+
     private bool facingLeft = false;
 
     [SerializeField] private float moveSpeed;
@@ -17,6 +20,7 @@ public class PlayerController : MonoBehaviour
 
     private void Awake()
     {
+        Instance = this;
         playerControls = new PlayerControls();
         rb = GetComponent<Rigidbody2D>();
         myAnimator = GetComponent<Animator>();
