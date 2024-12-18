@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class parallax : MonoBehaviour
+public class Parallax : MonoBehaviour
 {
     [SerializeField] private float parallaxOffset = -0.5f;
 
