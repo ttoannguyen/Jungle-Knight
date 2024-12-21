@@ -23,16 +23,26 @@ public class ActiveInventory : MonoBehaviour
         playerControls.Enable();
     }
 
-    private void ToggleActiveSlot(int numValue){
+    private void ToggleActiveSlot(int numValue)
+    {
         ToggleActiveHighLight(numValue - 1);
     }
 
-    private void ToggleActiveHighLight(int indexNum){
+    private void ToggleActiveHighLight(int indexNum)
+    {
         activeSlotIndexNum = indexNum;
 
-        foreach(Transform inventorySlot in this.transform){
+        foreach (Transform inventorySlot in this.transform)
+        {
             inventorySlot.GetChild(0).gameObject.SetActive(false);
         }
         this.transform.GetChild(indexNum).GetChild(0).gameObject.SetActive(true);
+
+        ChangeActiveWeapon();
+    }
+
+    private void ChangeActiveWeapon()
+    {
+        Debug.Log(transform.GetChild(activeSlotIndexNum).GetComponent<InventorySlot>().GetWeaponInfo.weaponPrefab.name);
     }
 }
