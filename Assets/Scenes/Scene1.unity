@@ -13152,6 +13152,7 @@ MonoBehaviour:
   moveSpeed: 3
   dashSpeed: 4
   myTrailRenderer: {fileID: 1583977997}
+  weaponCollider: {fileID: 2028064849}
 --- !u!95 &987330154
 Animator:
   serializedVersion: 5
@@ -19605,7 +19606,7 @@ Canvas:
   m_GameObject: {fileID: 1950063097}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_Camera: {fileID: 519420031}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
@@ -19699,7 +19700,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f3eba6138b4eb9e46a0879f8904e9325, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentActiveWeapon: {fileID: 0}
 --- !u!1 &2024663691
 GameObject:
   m_ObjectHideFlags: 0
