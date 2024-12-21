@@ -11,6 +11,8 @@ public class Sword : MonoBehaviour, IWeapon
 
     [SerializeField] private Transform slashAnimSpawnPoint;
 
+    [SerializeField] private WeaponInfo weaponInfo;
+
     [SerializeField] private float swordAttackCD = .5f;
 
 
@@ -32,9 +34,13 @@ public class Sword : MonoBehaviour, IWeapon
         MouseFollowWithOffset();
     }
 
+    public WeaponInfo GetWeaponInfo()
+    {
+        return weaponInfo;
+    }
+
     public void Attack()
     {
-        // isAttacking = true;
         myAnimator.SetTrigger("Attack");
         weaponCollider.gameObject.SetActive(true);
         slashAnim = Instantiate(slashAnimPrefab, slashAnimSpawnPoint.position, Quaternion.identity);
@@ -46,7 +52,6 @@ public class Sword : MonoBehaviour, IWeapon
     private IEnumerator AttackCDRoutine()
     {
         yield return new WaitForSeconds(swordAttackCD);
-        ActiveWeapon.Instance.ToggleIsAttacking(false);
     }
 
     private void DoneAttackingAnimEvent()
