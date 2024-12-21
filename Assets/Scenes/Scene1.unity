@@ -7627,7 +7627,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.5491438, y: 1.2077299, z: -10}
+  m_LocalPosition: {x: 3.5426807, y: 1.20769, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7841,7 +7841,7 @@ MonoBehaviour:
   m_Intensity: 0.7
   m_LightVolumeIntensity: 1
   m_LightVolumeIntensityEnabled: 0
-  m_ApplyToSortingLayers: 00000000553cb3a143cb45d87bd35d628707dd90
+  m_ApplyToSortingLayers: 00000000
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
@@ -19618,7 +19618,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 0
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 30
   m_TargetDisplay: 0
 --- !u!224 &1950063101
 RectTransform:
@@ -19665,6 +19665,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1972828295}
   - component: {fileID: 1972828296}
+  - component: {fileID: 1972828297}
   m_Layer: 0
   m_Name: Active Weapon
   m_TagString: Untagged
@@ -19698,6 +19699,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f3eba6138b4eb9e46a0879f8904e9325, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1972828297
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1972828294}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d602b7ece83dcc458233b910b8ca3f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &2024663691
