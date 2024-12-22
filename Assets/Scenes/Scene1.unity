@@ -7627,7 +7627,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.5491614, y: 1.2077299, z: -10}
+  m_LocalPosition: {x: 3.5345483, y: 1.2076299, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -13046,6 +13046,9 @@ GameObject:
   - component: {fileID: 987330154}
   - component: {fileID: 987330155}
   - component: {fileID: 987330153}
+  - component: {fileID: 987330158}
+  - component: {fileID: 987330157}
+  - component: {fileID: 987330156}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -13222,6 +13225,48 @@ CapsuleCollider2D:
   m_Offset: {x: -0.036848526, y: -0.05337659}
   m_Size: {x: 0.51586, y: 0.44537622}
   m_Direction: 1
+--- !u!114 &987330156
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 987330149}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf8bb7b44f0abc045b6d9a34cbb9b7f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHeath: 3
+  knockBackThrustAmount: 10
+  damageRecoveryTime: 1
+--- !u!114 &987330157
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 987330149}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ea6b06aac919114992b974327a99bfa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  whiteFlashMat: {fileID: 2100000, guid: ae3e966953088ce4c893b5453e2f11e6, type: 2}
+  restoreDefaultMatTime: 0.2
+--- !u!114 &987330158
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 987330149}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0757f3ffb2d46140bc2330bd44b4631, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  knockBackTime: 0.2
 --- !u!4 &1027763972 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5851869868772555119, guid: 40e96006be9307f4ca28afbe37e29a31, type: 3}
