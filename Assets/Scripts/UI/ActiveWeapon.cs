@@ -48,7 +48,8 @@ public class ActiveWeapon : Singleton<ActiveWeapon>
         CurrentActiveWeapon = null;
     }
 
-    private void AttackCooldown(){
+    private void AttackCooldown()
+    {
         isAttacking = true;
         StopAllCoroutines();
         StartCoroutine(TimeBetweenAttacksRoutine());
@@ -72,7 +73,7 @@ public class ActiveWeapon : Singleton<ActiveWeapon>
 
     private void Attack()
     {
-        if (attackButtonDown && !isAttacking)
+        if (attackButtonDown && !isAttacking && CurrentActiveWeapon)
         {
             AttackCooldown();
             (CurrentActiveWeapon as IWeapon).Attack();
