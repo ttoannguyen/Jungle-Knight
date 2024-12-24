@@ -16286,6 +16286,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ghost
       objectReference: {fileID: 0}
+    - target: {fileID: 7741509965952133804, guid: fbdcc06d06ff6334abd7e6ef7a01fc44, type: 3}
+      propertyPath: enemyType
+      value: 
+      objectReference: {fileID: 1876050525}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -17806,6 +17810,17 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!114 &1876050525 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8334725450367029180, guid: fbdcc06d06ff6334abd7e6ef7a01fc44, type: 3}
+  m_PrefabInstance: {fileID: 1441338827}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf438c44846f0c44fa594e60b5370635, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1878616477
 PrefabInstance:
   m_ObjectHideFlags: 0
