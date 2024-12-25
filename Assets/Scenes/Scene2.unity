@@ -15509,15 +15509,7 @@ PrefabInstance:
       objectReference: {fileID: 635028280}
     - target: {fileID: 2885954881051495763, guid: a9823be7050745d46aeecad7fec79479, type: 3}
       propertyPath: m_ChildCameras.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5668715816593019923, guid: a9823be7050745d46aeecad7fec79479, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 1.4027878
-      objectReference: {fileID: 0}
-    - target: {fileID: 5668715816593019923, guid: a9823be7050745d46aeecad7fec79479, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.4389947
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6991303716710094264, guid: a9823be7050745d46aeecad7fec79479, type: 3}
       propertyPath: m_Name
@@ -15562,14 +15554,6 @@ PrefabInstance:
     - target: {fileID: 8411463063624485016, guid: a9823be7050745d46aeecad7fec79479, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9101849098626033682, guid: a9823be7050745d46aeecad7fec79479, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 1.93
-      objectReference: {fileID: 0}
-    - target: {fileID: 9101849098626033682, guid: a9823be7050745d46aeecad7fec79479, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.29
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
