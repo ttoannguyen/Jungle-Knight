@@ -388,7 +388,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a546378ab00bb64b853798e712a3e2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 3
+  moveSpeed: 4
   dashSpeed: 4
   myTrailRenderer: {fileID: 2015815113035508894}
   weaponCollider: {fileID: 5631491383951172725}
