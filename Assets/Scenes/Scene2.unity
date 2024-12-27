@@ -18081,14 +18081,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1506442104991843885, guid: 572fadd6046c0fe40850823c82fc31ad, type: 3}
-      propertyPath: fullStaminaImage
-      value: 
-      objectReference: {fileID: 21300000, guid: 5ef63aeb0cd1832439fb1c8569c6f37c, type: 3}
-    - target: {fileID: 1506442104991843885, guid: 572fadd6046c0fe40850823c82fc31ad, type: 3}
-      propertyPath: emptyStaminaImage
-      value: 
-      objectReference: {fileID: 21300000, guid: 111dd7464a973b643ae473fe734f925e, type: 3}
     - target: {fileID: 5159337974664318320, guid: 572fadd6046c0fe40850823c82fc31ad, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.93
