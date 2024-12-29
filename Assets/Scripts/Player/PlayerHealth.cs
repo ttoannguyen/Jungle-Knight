@@ -1,10 +1,14 @@
 using System.Collections;
 using System.Data.Common;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class PlayerHealth : Singleton<PlayerHealth>
 {
+
+    public bool isDead { get; private set; }
+
     [SerializeField] private int maxHeath = 3;
     [SerializeField] private float knockBackThrustAmount = 10.0f;
     [SerializeField] private float damageRecoveryTime = 1.0f;
@@ -16,6 +20,9 @@ public class PlayerHealth : Singleton<PlayerHealth>
     private Flash flash;
 
     const string HEALTH_SLIDER_TEXT = "Health Slider";
+    const string TOWN_TEXT = "Scene1";
+    readonly int DEATH_HASH = Animator.StringToHash("Death");
+
 
     protected override void Awake()
     {
@@ -26,6 +33,7 @@ public class PlayerHealth : Singleton<PlayerHealth>
 
     private void Start()
     {
+        isDead = false;
         currentHealth = maxHeath;
 
         UpdateHealthSlider();
@@ -66,11 +74,21 @@ public class PlayerHealth : Singleton<PlayerHealth>
 
     private void CheckIfPlayerDeath()
     {
-        if (currentHealth <= 0)
+        if (currentHealth <= 0 && !isDead)
         {
+            isDead = true;
+            Destroy(ActiveWeapon.Instance.gameObject);
             currentHealth = 0;
-            Debug.Log("Player Death!!");
+            GetComponent<Animator>().SetTrigger(DEATH_HASH);
+            StartCoroutine(DeathLoadSceneRoutine());
         }
+    }
+
+    private IEnumerator DeathLoadSceneRoutine()
+    {
+        yield return new WaitForSeconds(2f);
+        Destroy(gameObject);
+        SceneManager.LoadScene(TOWN_TEXT);
     }
 
     private IEnumerator DamageRecoveryRoutine()
