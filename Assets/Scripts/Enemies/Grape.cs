@@ -24,7 +24,7 @@ public class Grape : MonoBehaviour, IEnemy
         }
         else
         {
-            spriteRenderer.flipY = true;
+            spriteRenderer.flipX = true;
         }
     }
 
