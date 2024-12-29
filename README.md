@@ -5,8 +5,7 @@
 2. [Key Features](#key-features)
 3. [Usage and Development](#usage-and-development)
 4. [Contributions](#contributions)
-5. [License](#license)
-6. [Acknowledgments](#acknowledgments)
+5. [Acknowledgments](#acknowledgments)
 
 ---
 
@@ -66,10 +65,6 @@ Contributions are welcome! To contribute:
 
 ---
 
-## License
-This project is licensed under the [MIT License](LICENSE). Feel free to use and modify the code for your own projects.
-
----
 
 ## Acknowledgments
 Special thanks to all contributors and testers who made this project possible.
