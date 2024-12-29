@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Grape : MonoBehaviour
+public class Grape : MonoBehaviour, IEnemy
 {
     [SerializeField] private GameObject grapeProjectPrefab;
     private Animator myAnimator;
@@ -30,6 +30,6 @@ public class Grape : MonoBehaviour
 
     public void SpawnProjectileAnimEvent()
     {
-        Instantiate(grapeProjectPrefab, transform.position, Quaternion.identity)
+        Instantiate(grapeProjectPrefab, transform.position, Quaternion.identity);
     }
 }

@@ -18512,6 +18512,7 @@ GameObject:
   - component: {fileID: 4854825011703475587}
   - component: {fileID: 8394271326558242780}
   - component: {fileID: 6975234930356260465}
+  - component: {fileID: 8699198870504310516}
   m_Layer: 0
   m_Name: Enemie1
   m_TagString: Untagged
@@ -18839,6 +18840,63 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5408081123278758795, guid: 0c36c1071d8d98b488fc41954a14f8b1, type: 3}
   m_PrefabInstance: {fileID: 4765457019888323637}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5856789844191493146
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2349399426140830536, guid: 5539355d033aa9445a66a733bb4f00a9, type: 3}
+      propertyPath: m_Name
+      value: Grape Projectile
+      objectReference: {fileID: 0}
+    - target: {fileID: 9004387934071826038, guid: 5539355d033aa9445a66a733bb4f00a9, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.763
+      objectReference: {fileID: 0}
+    - target: {fileID: 9004387934071826038, guid: 5539355d033aa9445a66a733bb4f00a9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 9004387934071826038, guid: 5539355d033aa9445a66a733bb4f00a9, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9004387934071826038, guid: 5539355d033aa9445a66a733bb4f00a9, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9004387934071826038, guid: 5539355d033aa9445a66a733bb4f00a9, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9004387934071826038, guid: 5539355d033aa9445a66a733bb4f00a9, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9004387934071826038, guid: 5539355d033aa9445a66a733bb4f00a9, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9004387934071826038, guid: 5539355d033aa9445a66a733bb4f00a9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9004387934071826038, guid: 5539355d033aa9445a66a733bb4f00a9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9004387934071826038, guid: 5539355d033aa9445a66a733bb4f00a9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5539355d033aa9445a66a733bb4f00a9, type: 3}
 --- !u!198 &6167154339505765324
 ParticleSystem:
   m_ObjectHideFlags: 0
@@ -23798,7 +23856,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   roamChangeDirFloat: 2
   attackRange: 5
-  enemyType: {fileID: 0}
+  enemyType: {fileID: 8699198870504310516}
   attackCooldown: 2
   stopMovingWhileAttack: 0
 --- !u!114 &8394271326558242780
@@ -23850,6 +23908,19 @@ CapsuleCollider2D:
   m_Offset: {x: -0.041443635, y: 0.38413385}
   m_Size: {x: 0.904537, y: 0.904537}
   m_Direction: 1
+--- !u!114 &8699198870504310516
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 240263211743114342}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46b254767ef5426438622ad40daca0bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  grapeProjectPrefab: {fileID: 2349399426140830536, guid: 5539355d033aa9445a66a733bb4f00a9, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -23863,3 +23934,4 @@ SceneRoots:
   - {fileID: 1878616477}
   - {fileID: 379330250}
   - {fileID: 799731257}
+  - {fileID: 5856789844191493146}
