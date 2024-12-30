@@ -6,9 +6,7 @@ public class ActiveWeapon : Singleton<ActiveWeapon>
     public MonoBehaviour CurrentActiveWeapon { get; private set; }
 
     private PlayerControls playerControls;
-
     private float timeBetweenAttacks;
-
     private bool attackButtonDown, isAttacking = false;
 
     protected override void Awake()
